@@ -16,6 +16,7 @@ runs:
       - name: display repo
         run: tree
         working-directory: .
+        shell: bash
       - name: Build bicep
         uses: azure/CLI@v1
         with:
