@@ -17,7 +17,7 @@ runs:
         run: pwd
         shell: bash
       - name: display repo
-        run: tree
+        run: tree -a
         shell: bash
       - name: Build bicep
         uses: azure/CLI@v1
