@@ -13,6 +13,9 @@ runs:
   using: "composite"
   steps:
       - uses: actions/checkout@v2 
+      - name: display repo
+        run: tree
+        working-directory: .
       - name: Build bicep
         uses: azure/CLI@v1
         with:
